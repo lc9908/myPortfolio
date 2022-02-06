@@ -38,10 +38,6 @@ html{
   color:black;
 }
 
-.navbar .logo:hover{
-  color:grey;
-}
-
 
 .navbar .menu li a{
   color: black;

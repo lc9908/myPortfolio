@@ -1,3 +1,9 @@
+// setTimeout(()=>{
+//   history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+// }, 5);
+
+
+
 $(document).ready(function(){
   $('.menu-btn').click(function(){
     $('.navbar .menu').toggleClass("active");
