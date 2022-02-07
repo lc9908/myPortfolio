@@ -100,10 +100,9 @@ section{
   font-size: 40px;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  border-radius: 30%;
-  border-bottom: solid;
   border-color: black;
   color:black;
+  text-decoration: overline;
 }
 
 /*
@@ -250,8 +249,6 @@ section{
 
 .interests .interests-content .mid{
     position: relative;
-
-
 }
 
 .interests .interests-content .mid .prev,
@@ -266,6 +263,7 @@ section{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  display:none;
 }
 .interests .interests-content .mid .next{
     right: 0;
@@ -304,13 +302,41 @@ section{
   opacity: 1;
 }
 /* footer section styling */
+
 .footer{
+    position: fixed;
     display:flex;
-    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
     bottom: 0;
     width: 100%;
-    /* Height of the footer*/
-      background: white;
+    background: white;
+}
+
+.footer .email{
+  display:none;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.email.active{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer .footer-content .email-link i.active{
+  text-decoration: overline #BAE8FF;
+  color:#BAE8FF;
+}
+
+
+.footer .footer-content{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -318,17 +344,16 @@ section{
   padding: 0 10px;
   font-size: 30px;
   font-weight: bold;
+  color: black;
 }
+
+.footer .footer-content i:hover{
+  color:#BAE8FF;
+}
+
 
 /*reponsive media query start */
 @media (max-width:690px){
-  .interests .interests-content .mid .prev,
-  .interests .interests-content .mid .next{
-    font-size:  10px;
-    padding: 5px;
-    font-weight: bold;
-  }
-
 
   .about .title,
   .education .title,
@@ -337,22 +362,19 @@ section{
     font-size: 25px;
   }
 
-  font-weight: bold;
-  font-size: 30px;
-
-  .footer .footer-content i{
-    padding: 0 10px;
-    font-size: 10px;
+  .interests .interests-content .mid .prev,
+  .interests .interests-content .mid .next{
+    display:block;
   }
 
-  .footer .footer-content .email{
+  .footer  .email{
     font-size: 15px;
   }
 
 
   .education .education-content .right img{
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    width: 350px;
     object-fit: cover;
     padding: 0 20px;
   }
@@ -365,8 +387,8 @@ section{
     font-size: 20px;
   }
   .interests .interests-content .mid img{
-    width:200px;
-    height:200px;
+    width:350px;
+    height:350px;
   }
 
   .max-width{
@@ -385,6 +407,7 @@ section{
     height: 350px;
     width: 350px;
   }
+
   .about .about-content .column,
   .education .education-content .column{
     width: 100%;
@@ -445,8 +468,9 @@ section{
 
   .interests .interests-content{
     display: flex;
-    flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .interests .interests-content .left,
@@ -454,22 +478,5 @@ section{
     display:none;
   }
 
-  .interests .interests-content .mid .prev,
-  .interests .interests-content .mid .next{
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .interests .interests-content .mid .next{
-      right: 0;
-      border-radius: 3px 0 0 3px;
-  }
 
 }

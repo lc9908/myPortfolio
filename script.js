@@ -9,6 +9,13 @@ $(document).ready(function(){
     $('.navbar .menu').toggleClass("active");
     $('.menu-btn i').toggleClass("active");
   });
+
+  $('.email-link').click(function(){
+    $('.email').toggleClass("active");
+    $('.footer .footer-content .email-link i').toggleClass("active");
+  });
+
+
 });
 
 function changeImage(n){
