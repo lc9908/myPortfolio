@@ -22,11 +22,11 @@ html{
     position: fixed;
     right:0;
     bottom:0;
-    width:100px;
-    height:100px;
+    width:50px;
+    height:50px;
     border: 5px solid red;
     z-index: 100;
-    margin: 70px 80px;
+    margin: 50px 50px;
     border-radius: 50%;
     color: rgb(255, 0, 0);
     font-size: 1.5rem;
@@ -49,6 +49,7 @@ html{
     padding: 20px;
     padding-top:5%;
     transition: .3s; 
+    z-index: 2;
 }
 
 .nav-bar.active{
@@ -250,6 +251,7 @@ html{
 /*section styling*/
 section{
     padding: 50px 0;
+    background-color: var(--background-color);
 }
 
 /* title */
@@ -274,14 +276,13 @@ section{
     display: flex;
     justify-content: center;
     width:100%;
-    background-color: #289c1b;
 }
 
 .about h2{
     text-align:justify;
-    color: var(--background-color);
     font-size: 23px;
     font-weight:500;
+    color: #20C20E;
 }
 
 .about .resume-btn{
@@ -291,25 +292,24 @@ section{
     border-radius: 30px;
     font-weight: bold;
     font-size: 20px;
-    color: var(--background-color);
-    border: 3px solid var(--background-color); 
+    color:var(--hacker-green); 
+    border: 3px solid var(--hacker-green); 
     text-decoration: none;
 }
 
 .about .resume-btn:hover{
-    background-color: var(--background-color);
-    color:rgb(255, 208, 0);
-    transition: .6s;
+    background-color: var(--hacker-green);
+    color:var(--background-color); 
+    transition: .3s;
 }
 
 .about p{
     font-size: 20px;
-    color: black;
+    color:white;
 }
 
 .about p span{
     font-size: 23px;
-    color: black;
     font-weight: 500;
 
 }
@@ -324,12 +324,8 @@ section{
     display: flex;
     justify-content: center;
     width:100%;
-    background-color: white;
 }
 
-.education .title{
-    color: var(--background-color);
-}
 
 .education .edu-info{
     width: 100%;
@@ -338,13 +334,13 @@ section{
 
 .education .edu-info h1{
     margin: 20px 0;
-    color:var(--background-color);
     font-size: 23px;
     font-weight:500;
+    color: white;
 }
 
 .education .edu-info h1 span{
-    color:#20C20E;
+    color: var(--hacker-green);
     font-size: 28px;
 }
 
@@ -395,12 +391,10 @@ section{
     width:100%;
     display: flex;
     justify-content: center;
-    border: 1px solid black;
-    background-color: #289c1b;
 }
 
 .projects .max-width{
-    max-width: 1000px;
+    /* max-width: 1000px; */
     display: flex;
     flex-direction: column;
 }
@@ -408,6 +402,7 @@ section{
 .projects .max-width .container{
     display: flex;
     justify-content: center;
+    float: right;
     padding: 20px 0;
     flex-wrap: wrap;
 }
