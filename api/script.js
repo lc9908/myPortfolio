@@ -5,7 +5,7 @@
 function getWeather(){
 
     const search = document.getElementById("search-bar");
-    fetch("https://api.openweathermap.org/data/2.5/weather?q="+search.value+"&units=metric&appid=21ab7e611e9f17489a04f1ae8663f12c")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q="+search.value+"&units=metric&appid="+getApi())
     .then((response) => response.json())
     .then((data) => displayWeather(data,search));
 }
