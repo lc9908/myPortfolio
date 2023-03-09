@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-family: sans-serif;
+}
+
+.navbar{
+    background-color: #1F2937;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.navbar .logo{
+    font-size:  24px;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    padding: 100px 0;
+    gap: 100px;
+    color:white;
+}
+
+.left, .right{
+    width:450px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.left .main{
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.left .subtext{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.left .signup{
+    display: flex;
+    margin-top: 20px;
+}
+
+.left .signup a{
+    background-color: #3882F6;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.right{
+    background-color: rgba(187, 187, 187, 0.5);
+}
+
+.information{
+    padding: 50px 0;
+}
+
+.information h1{
+    text-align: center;
+    font-size: 36px;
+    color:#1F2937;
+    margin-bottom: 20px;
+}
+
+.information .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.information .content .image{
+    width:200px;
+    height:200px;
+    border-radius: 10px;
+    border: 5px solid #3882F6;
+    margin-bottom: 10px;
+
+}
+
+.information .content .text{
+    text-align: center;
+}
+
+.quoteblock{
+    padding: 50px 0;
+    background-color: #E5E7EB;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.quote{
+    text-align: center;
+    width:1000px;
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.quoteblock p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.signupblock{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupblock .banner{
+    width:1000px;
+    padding: 50px;
+    background-color:  #3882F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.signupblock .banner .text{
+    color:white;
+}
+
+.signupnblock .button{
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 5px 30px;
+}
+
+.footer{
+    padding: 30px 0;
+    background-color: #1F2937;
+}
+
+.footer .text{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}

@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+.sidebar{
+    width: 20vw;
+    background-color: rgb(255, 160, 45);
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.bookInfo{
+    width:100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.bookInfo label{
+    font-size: 30px; 
+}
+
+.bookInfo input{
+    background-color: rgb(235, 190, 122);
+    height: 30px;
+    width: 80%;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 20px;
+    border:0;
+    margin: 5px 0;
+}
+
+#add{
+    padding: 15px 30px;
+    border: none;
+    background-color: rgb(250, 44, 44);
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#add:hover{
+    background-color: rgb(161, 13, 13);
+}
+
+#add:active{
+    background-color: rgb(250, 44, 44);
+
+}
+
+.library{
+    height: 100vh;
+    width: 80vw;
+    background-color: rgb(201, 201, 201);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:15px;
+    padding: 15px;
+    overflow: scroll;
+
+}
+
+.book{
+    --padding: 15px;
+    background-color: white;
+    height: calc( calc(100vh/2) - 30px);
+    border-radius: 10px;
+    position: relative;  
+    padding: var(--padding);
+    /* display: flex; */
+}
+
+.btns{
+    position: absolute;
+    width:calc(100% - calc(var(--padding)*2));
+    bottom: var(--padding);
+}
+
+.btns button{
+    width:100%;
+    padding: 15px 0;
+    border-radius: 20px;
+    margin: 3px 0;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btns button:hover{
+    background-color: rgb(94, 94, 94);
+}
+
+.remove{
+    background-color: rgb(49, 49, 49);
+}
+
+.changeRead.read{
+    background-color:green;
+}
+
+.changeRead.notread{
+    background-color:red;
+}

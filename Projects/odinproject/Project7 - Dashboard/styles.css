@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    background-color: #1992d4;
+    padding: 20px;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.sidebar h1{
+    margin-bottom: 15px;
+}
+
+.logo{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.logo h1{
+    padding-top: 15px;
+}
+
+.logo div{
+    width:50px;
+    height:50px;
+    background-color: white;
+}
+
+.main{
+    width:80%;
+    background-color: #e2e8f0;
+}
+
+.top{
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgb(201, 201, 201);
+}
+
+.top i {
+    font-size: 20px;
+}
+
+.top .row1{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.top .row1 .search{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top .row1 .search .searchBar{
+    height:30px;
+    border-radius: 20px;
+    background-color: #e2e8f0;
+    border: none;
+    width:500px;
+
+}
+
+.top .row1 .icon .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.top .row1 .icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.top .row2{
+    height: 10vh;
+}
+
+
+.main .bottom{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.main .bottom .projects{
+    grid-row: 1 / 3;
+    padding: 15px;
+}
+
+.main .bottom .projects .project{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:15px;
+    height: calc(100% - 32px);
+    margin-top: 10px;
+}
+
+.main .bottom .projects .project .card{
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.main .bottom .announcement{
+    padding: 15px;
+
+}
+
+.main .bottom .announcement div{
+    height: calc(100% - 32px);
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.main .bottom .trending{
+    padding: 15px;
+}
+
+.main .bottom .trending div{
+    height: calc(100% - 32px);
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.main .bottom .projects .project .card:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 10px;
+    background-color: #f0b429;
+    border-radius: 20px 0 0 20px ;
+}
+
+
+
+
+@media (max-width: 1100px){
+    .sidebar{
+        top:0;
+        left:0;
+        width: 0;
+        padding:0;
+    }
+
+    .main{
+        width: 100vw;
+    }
+}

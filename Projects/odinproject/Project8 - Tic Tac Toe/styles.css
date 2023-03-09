@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100vh;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    padding: 15px;
+    gap: 15px;
+}
+
+.cell{
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 0 0 5px 5px black;
+}
+.cell:nth-child(3n+2){
+    border-style: solid;
+    border-width: 0 1px 0 1px;
+    border-color: black;
+}
+
+.cell:nth-child(4){
+    border-style: solid;
+    border-width: 1px  0 1px 0;
+    border-color: black;
+}
+
+.cell:nth-child(5){
+    border-style: solid;
+    border-width: 1px  1px 1px 1px;
+    border-color: black;
+}
+
+.cell:nth-child(6){
+    border-style: solid;
+    border-width: 1px  0 1px 0;
+    border-color: black;
+}
+
+.playagain{
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(150, 150, 150, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.playagain .result{
+    font-size: 50px;
+}
+
+.playagain button{
+    padding: 20px 50px;
+    border: 3px solid black;
+}
+
+.playagain button:hover{
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+.playagain button:active{
+    background-color: rgb(184, 184, 184);
+}

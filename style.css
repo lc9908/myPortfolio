@@ -194,7 +194,7 @@ html{
 }
 
 .side-bar{
-    display:flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -393,60 +393,100 @@ section{
     justify-content: center;
 }
 
-.projects .max-width{
-    /* max-width: 1000px; */
-    display: flex;
-    flex-direction: column;
-}
 
 .projects .max-width .container{
     display: flex;
-    justify-content: center;
-    float: right;
-    padding: 20px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* .projects .max-width .container.active{
-    visibility: hidden;
-
-} */
-
-.projects .max-width .container .card{
-    width: 350px;
+.projects .card{
+    width: min(350px,100%);
     height: 450px;
-    margin: 10px 30px;
-    display: flex;
-    flex-direction: column; 
-
+    /* padding: 5px; */
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
 }
 
-
-.card-img-top{
-    width:350px;
-    height:50%;
-}
-
-.card-body{
-    display: flex;
-    flex-direction: column;
+.projects .card .top{
     height: 50%;
-    align-items: flex-start;
 }
 
-.card-body .card-text{
-    height:90%;
+.projects .card img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projects .card .bottom{
+    padding: 0 5px;
+}
+
+
+.projects .tags{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.projects .tag{
+    color:white;
+    background-color: crimson;
+    padding:5px 15px;
+    margin:0;
+    border-radius: 15px;
+    font-size: 11px;
+    position: relative;
+}
+
+.projects .card .bottom .links{
+    --margin: 5px;
+    position: absolute;
+    display: flex;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+
+.projects .card .bottom .links .link{
+    background-color: crimson;
+    color: var(--background-color);
+    text-decoration: none;
+    margin:5px;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.projects .card .bottom .links .link i{
+    font-size: 20px;
 }
 
 
 /* responsive styling*/
+
+@media (max-width: 1230px){
+
+    .projects .max-width .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
 
 @media (max-width: 1100px){
 
     .nav-bar{
         display: block;
         text-align: center;
+    }
 
+    .side-bar{
+        display: flex;
     }
 
     .menu-btn{

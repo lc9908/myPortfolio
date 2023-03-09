@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.setting{
+    padding: 10px;
+    box-shadow: 0 0 8px 1px rgb(231, 231, 231);
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container{
+    /* border: 1px solid black; */
+    width: 700px;
+    height: 700px;
+    box-shadow: 0 0 5px 1px rgb(158, 154, 154);
+    display: grid;
+    /* grid-template-columns: repeat(5,auto); */
+    padding: 10px;
+}
+
+.grid{
+    border: 1px solid rgb(190, 190, 190);
+}
+
+.grid.trail{
+    background-color: black;
+}
+
+.sliderValue{
+    display: inline;
+}
+
+.clearBoardButton{
+    border: 1px solid rgb(141, 141, 141);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.clearBoardButton:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+.clearBoardButton:active{
+    background-color: rgb(255, 255, 255);
+}
